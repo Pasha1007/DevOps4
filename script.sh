@@ -18,6 +18,4 @@ usermod -aG adminuser poweruser
 echo 'poweruser ALL=(ALL) /sbin/iptables' | EDITOR='tee -a' visudo 
 #Створюємо софт лінк на файл /etc/mtab в хоум дірі poweruser-a
 ln -s /etc/mtab /home/poweruser/mtab_link 
-#Робить скріпт можливим для запуску
-chmod -v +x /root/sysinfo.sh &>/tmp/chmod.log 
  
